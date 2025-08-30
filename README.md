@@ -21,9 +21,9 @@ You’ll learn how to set up a basic scene with a camera, lights, and renderer, 
 └── assets/ # Folder for 3D models & textures
 
 1. **Clone this repository**  
-   git clone https://github.com/your-username/threejs-beginner-model-loader.git
-   cd threejs-beginner-model-loader
-2. **Open index.html in your browser**
+   git clone https://github.com/Mirembe-Peace/Three_JS_Beginner_Tutorial.git
+   
+3. **Open index.html in your browser**
   You can simply double-click index.html or serve it with a local server for best results.
   Example using VS Code’s Live Server extension.
 
