@@ -3,10 +3,10 @@
 import * as THREE from 'three';
 
 // Import the GLTFLoader to load 3D models in .gltf / .glb format
-import { GLTFLoader } from '/three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // Import OrbitControls to allow mouse interaction (rotate, zoom, pan)
-import { OrbitControls } from '/three/addons/controls/OrbitControls.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 
 // ------------------------------
