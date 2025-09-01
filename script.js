@@ -68,7 +68,8 @@ const loader = new GLTFLoader();
 
 // Load the model (path to file, success callback, error callback)
 loader.load(
-    './assets/pink_house.gltf',   // Path to the model
+    './assets/pink_house.glb',   // Path to the model 
+    // credits (https://sketchfab.com/3d-models/pink-house-4c8215427b5e46818db595d6558a7172) by CGulia (https://sketchfab.com/CGulia) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
     function (gltf) {
         // This function runs if the model loads successfully
         const pink_house = gltf.scene;  // Extract the 3D scene object from the model
@@ -82,7 +83,7 @@ loader.load(
         // Add the model to our main scene
         scene.add(pink_house);
     },
-    undefined, // (Optional) function to track loading progress
+    undefined,
     function (error) {
         // This function runs if there’s an error loading the model
         console.log('An error occurred while loading the model');
