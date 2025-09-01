@@ -74,7 +74,7 @@ loader.load(
         pink_house.position.set(0, 0, 0);
 
         // Scale the model (make it bigger/smaller)
-        pink_house.scale.set(2, 2, 2);
+        pink_house.scale.set(0.5, 0.5, 0.5);
 
         // Add the model to our main scene
         scene.add(pink_house);
