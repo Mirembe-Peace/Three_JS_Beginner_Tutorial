@@ -95,7 +95,7 @@ loader.load(
 // ------------------------------
 
 // The renderer is what draws the scene and camera into the canvas (like a projector)
-const renderer = new THREE.WebGLRenderer({ alpha: true }); 
+const renderer = new THREE.WebGLRenderer({canvas, alpha: true }); 
 // `alpha: true` makes the background transparent
 
 // Set the size of the renderer to match our canvas
@@ -103,9 +103,6 @@ renderer.setSize(width, height, false);
 
 // Improve rendering quality for high-resolution screens
 renderer.setPixelRatio(window.devicePixelRatio);
-
-// Append the renderer’s canvas to the document so we can see it
-document.body.appendChild(renderer.domElement);
 
 
 // ------------------------------
