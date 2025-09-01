@@ -16,10 +16,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 // Select the <canvas> element from HTML where we will render our 3D scene
 const canvas = document.querySelector('.canvas');
 
-// Get the canvas dimensions
-const width = canvas.clientWidth;
-const height = canvas.clientHeight;
-
 // Create a new scene (this is like your "3D world")
 const scene = new THREE.Scene();
 
@@ -96,11 +92,11 @@ loader.load(
 // ------------------------------
 
 // The renderer is what draws the scene and camera into the canvas (like a projector)
-const renderer = new THREE.WebGLRenderer({canvas, alpha: true }); 
+const renderer = new THREE.WebGLRenderer({canvas : canvas}); 
 // `alpha: true` makes the background transparent
 
 // Set the size of the renderer to match our canvas
-renderer.setSize(width, height, false);
+renderer.setSize(window.innerWidth, window.innerHeight);
 
 // Improve rendering quality for high-resolution screens
 renderer.setPixelRatio(window.devicePixelRatio);
